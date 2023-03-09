@@ -1,0 +1,22 @@
+{
+  "name": "paystation/sample-composer",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Paystation",
+      "email": "info@paystation.co.nz"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "guzzlehttp/guzzle": "^7.5",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "src"
+    ]
+  }
+}
