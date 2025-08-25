@@ -35,10 +35,10 @@ function getAccessToken($scope)
         echo "cURL error: " . $error;
     } else {
         $response = json_decode($curlResponse);
-        if (array_key_exists('access_token', $response)) {
+        if ($response && $response->access_token) {
             return $response->access_token;
         }
-        if (array_key_exists('error', $response)) {
+        if ($response && $response->error) {
             echo $response->error_description;
         }
     }
