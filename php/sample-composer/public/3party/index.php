@@ -30,7 +30,8 @@ $data = [
 $data += [
     'return_url' => 'http://localhost:8001/3party/return.php',
     // Webhook receipt page. This should be publicly accessible (see example post-response.php)
-    'response_url' => 'https://webhook.site/sample-code-webhook'
+    // if you set this, it will override the one set in the Gateway Admin
+    //'response_url' => 'https://webhook.site/sample-code-webhook'
 ];
 
 try {
